@@ -1104,11 +1104,11 @@ ol, ul {
 .light-bg-mobile {
     display: none;
 }
-.page-top-rel-top #dark_bg_img {
+/* .page-top-rel-top #dark_bg_img {
     width: 100%;
     object-fit: cover;
     min-height: 560px;
-}
+} */
 .dark-bg-intro .btn-offer {
     left: 0;
     margin: 0;
@@ -1123,7 +1123,7 @@ ol, ul {
     max-width: 1500px;
     margin-top: 136px;
 }
-.okraskah-content-article {
+.okraskah-content-article:not(:last-child) {
     margin-bottom: 90px;
 }
 .okraskah-content-article h3 {
@@ -1134,9 +1134,6 @@ ol, ul {
 .okraskah-content-article p {
     font-size: 26px;
     line-height: normal;
-}
-.okraskah-content-article:last-child{
-    margin-bottom: 100px;
 }
 .okraskah-content-article-priority {
     display: flex;
@@ -1232,6 +1229,7 @@ ol, ul {
 }
 
 
+
 /* ========= SPOSOBY NANESENIYA ===========*/
 .page-top-rel-block-nanesenie {
     position: absolute;
@@ -1242,6 +1240,10 @@ ol, ul {
     justify-content: space-between;
     padding: 30px 150px 0 76px;
     margin-bottom: 100px;
+}
+.nanesenie-bg {
+    object-fit: cover;
+    height: 100%;
 }
 .nanesenie-intro-card {
     display: flex;
@@ -1430,6 +1432,12 @@ ol, ul {
 .error-text h3 {
     font-size: 40px;
     font-weight: bold;
+}
+.error-text a {
+    color: #0d6efd;
+}
+.error-text a:hover {
+    color: #8fff00;
 }
 .bg_404-1 {
     left: 10vw;
@@ -2176,6 +2184,9 @@ sup {
     }
     .product-application-ways > ul > li {
         font-size: 15px;
+    }
+    .error-text {
+        margin-top: 180px;
     }
 }
 
@@ -3823,6 +3834,7 @@ sup {
     .dark-bg-intro-nanesenie {
         flex-wrap: wrap;
         padding: 30px 45px 0 45px;
+        margin-bottom: 20px;
     }
     .nanesenie-intro-card {
         max-width: 43%;
@@ -4043,18 +4055,17 @@ sup {
 
 
     /*========= COOKIE ==========*/
-    .offcanvas-cookie h4 {
+    .offcanvas-header {
+        padding: 35px 40px;
+    }
+    .cookie-page h4 {
         font-size: 20px;
-        margin-bottom: 15px;
     }
-    .offcanvas-cookie h3 {
-        font-size: 30px;
+    .cookie-page h5, .cookie-page p, .cookie-page li {
+        font-size: 12px;
     }
-    .offcanvas-cookie li {
-        font-size: 16px;
-    }
-    .offcanvas-cookie p {
-        font-size: 16px;
+    .cookie-block {
+        flex-basis: 70%;
     }
     .offcanvas-cookie article {
         margin-bottom: 30px;
